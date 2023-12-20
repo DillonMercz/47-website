@@ -1,0 +1,300 @@
+<head>
+    <title>47 Industries - Shop Latest Products</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link href="https://fonts.cdnfonts.com/css/glacial-indifference" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <style>
+    body {
+        background-color: black;
+    }
+
+    .header {
+        background-color: white;
+        border-radius: 50px;
+        width: 50%;
+        cursor:pointer;
+
+    }
+
+    .nav {
+        display: flex;
+        flex-wrap: nowrap !important;
+    }
+
+    .header .pill {
+        background-color: white;
+        color: black;
+        border-radius: 40px;
+        padding: 20px;
+        font-family: "Arial";
+        margin-right: 10px;
+        width: 150px;
+        margin: 10px;
+
+    }
+
+    .active {
+        background-color: black !important;
+        color: white !important;
+    }
+
+    .logo {
+        position: absolute;
+        top: -10px;
+        left: 25px;
+    }
+
+
+    #space {
+        width: 100%;
+        position: absolute;
+        z-index: -2;
+        height: 350%;
+    }
+
+    #warp {
+        position: absolute;
+        z-index: 9;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: 20px auto;
+        color: rgba(209, 255, 255, 1);
+        border: 2px solid;
+        padding: 1em;
+        width: 10em;
+        text-align: center;
+        font-weight: 700;
+        font-size: 1.2em;
+        display: inline-block;
+        text-decoration: none;
+        background: rgba(0, 0, 0, 0.8)
+    }
+
+
+    /* follow me @nodws */
+    #btn-twtr {
+        clear: both;
+        color: #fff;
+        border: 2px solid;
+        border-radius: 3px;
+        text-align: center;
+        text-decoration: none;
+        display: block;
+        font-family: sans-serif;
+        font-size: 14px;
+        width: 13em;
+        padding: 5px 10px;
+        font-weight: 600;
+        position: absolute;
+        top: 0;
+        right: 10%;
+        margin: 90vh 0;
+        background: rgba(0, 0, 0, 0.2);
+        box-shadow: 0 0 0px 3px rgba(0, 0, 0, 0.2);
+        opacity: 0.3
+    }
+
+    #btn-twtr:hover {
+        color: #fff;
+        opacity: 1
+    }
+
+    h1 {
+        text-align: left;
+        color: white;
+    }
+
+    p {
+        text-align: left;
+        color: white;
+    }
+
+    .product-title {
+        font-family: 'Glacial Indifference', sans-serif;
+    }
+
+    .product-price {
+        font-family: 'Glacial Indifference', sans-serif;
+        color: black;
+    }
+
+    .swiper-container {
+        width: 100%;
+        /* Adjust the width as needed */
+        margin: auto;
+        /* Center the swiper container */
+        overflow: scroll;
+        /* Hide overflow */
+    }
+
+    .swiper-pagination-bullet {
+        background: white !important;
+    }
+
+    .swiper-wrapper {
+        height: 70% !important;
+    }
+
+    .centered-section {
+        text-align: center;
+        background-color: #fff;
+        padding: 50px 0;
+    }
+
+    .side-by-side {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    .side-section {
+        width: 48%;
+    }
+
+    .side-section img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    a {
+        color: white;
+    }
+    .card-img-top{
+        height:300px !important;
+    }
+    </style>
+</head>
+
+<body>
+    <center>
+        <div class="header">
+            <div class="nav">
+                <img src="https://i.imgur.com/A0YrFcq.png" width="100px" height="100px" class="logo">
+                <a href="./index.html" class="pill">Home</a>
+                <a href="./shop.html" class="pill active">Shop</a>
+                <a href="./moto-x.html" class="pill">Moto X</a>
+                <a href="./about.html" class="pill">About</a>
+                <i href="./cart.html" class="fas fa-shopping-cart" style="position:absolute;top:30px;right:45px;color:white;font-size:25px"></i>
+            </div>
+        </div>
+    </center>
+    <br><br>
+    <header class="bg-dark py-5">
+        <div class="container px-4 px-lg-5 my-5">
+            <div class="text-center text-white">
+                <h1 class="display-4 fw-bolder" style="text-align:center">Shop in style</h1>
+                <p class="lead fw-normal text-white-50 mb-0" style="text-align:center">Browse through our awesome collection</p>
+            </div>
+        </div>
+    </header>
+    <section class="py-5">
+        <div class="container px-4 px-lg-5 mt-5">
+            <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Product image-->
+                        <img class="card-img-top" src="https://static.wixstatic.com/media/4f5241_c9a42d74f95340c5aaa9ea2a9c444eb6~mv2.jpg/v1/fill/w_254,h_450,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/4f5241_c9a42d74f95340c5aaa9ea2a9c444eb6~mv2.jpg" alt="...">
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Fancy Product</h5>
+                                <!-- Product price-->
+                                $40.00 - $80.00
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">View options</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Sale badge-->
+                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                        <!-- Product image-->
+                        <img class="card-img-top" src="https://static.wixstatic.com/media/27127f_ce3c8e3192b9408ea95f12e6afdbec08~mv2.png/v1/fill/w_450,h_450,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/27127f_ce3c8e3192b9408ea95f12e6afdbec08~mv2.png" alt="...">
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Special Item</h5>
+                                <!-- Product reviews-->
+                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                </div>
+                                <!-- Product price-->
+                                <span class="text-muted text-decoration-line-through">$20.00</span>
+                                $18.00
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Sale badge-->
+                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                        <!-- Product image-->
+                        <img class="card-img-top" src="https://static.wixstatic.com/media/27127f_d1fa298b1e744c2da76b89a1d3bf8c59~mv2.png/v1/fill/w_300,h_300,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/27127f_d1fa298b1e744c2da76b89a1d3bf8c59~mv2.png" height="300px" alt="...">
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Sale Item</h5>
+                                <!-- Product price-->
+                                <span class="text-muted text-decoration-line-through">$50.00</span>
+                                $25.00
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="footer">
+        <center>
+            <img src="https://i.imgur.com/A0YrFcq.png" width="100px" height="100px">
+            <br>
+            <a href="mailto:info@47industries.org">info@47industries.org</a>
+            <br>
+            <a style="color:white;">Seminole, Florida</a>
+            <br><br>
+            <a style="color:white;">©2023 by 47 Industries</a>
+        </center>
+        <br><br><br>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    loop: true,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+});
+</script>

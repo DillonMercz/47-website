@@ -1,0 +1,277 @@
+<head>
+    <title>47 Industries - Shop Latest Products</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link href="https://fonts.cdnfonts.com/css/glacial-indifference" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <style>
+    body {
+        background-color: black;
+    }
+
+    .header {
+        background-color: white;
+        border-radius: 50px;
+        width: 50%;
+        cursor:pointer;
+
+    }
+
+    .nav {
+        display: flex;
+        flex-wrap: nowrap !important;
+    }
+
+    .header .pill {
+        background-color: white;
+        color: black;
+        border-radius: 40px;
+        padding: 20px;
+        font-family: "Arial";
+        margin-right: 10px;
+        width: 150px;
+        margin: 10px;
+
+    }
+
+    .active {
+        background-color: black !important;
+        color: white !important;
+    }
+
+    .logo {
+        position: absolute;
+        top: -10px;
+        left: 25px;
+    }
+
+
+    #space {
+        width: 100%;
+        position: absolute;
+        z-index: -2;
+        height: 350%;
+    }
+
+    #warp {
+        position: absolute;
+        z-index: 9;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: 20px auto;
+        color: rgba(209, 255, 255, 1);
+        border: 2px solid;
+        padding: 1em;
+        width: 10em;
+        text-align: center;
+        font-weight: 700;
+        font-size: 1.2em;
+        display: inline-block;
+        text-decoration: none;
+        background: rgba(0, 0, 0, 0.8)
+    }
+
+
+    /* follow me @nodws */
+    #btn-twtr {
+        clear: both;
+        color: #fff;
+        border: 2px solid;
+        border-radius: 3px;
+        text-align: center;
+        text-decoration: none;
+        display: block;
+        font-family: sans-serif;
+        font-size: 14px;
+        width: 13em;
+        padding: 5px 10px;
+        font-weight: 600;
+        position: absolute;
+        top: 0;
+        right: 10%;
+        margin: 90vh 0;
+        background: rgba(0, 0, 0, 0.2);
+        box-shadow: 0 0 0px 3px rgba(0, 0, 0, 0.2);
+        opacity: 0.3
+    }
+
+    #btn-twtr:hover {
+        color: #fff;
+        opacity: 1
+    }
+
+    h1 {
+        text-align: left;
+        color: white;
+    }
+
+    p {
+        text-align: left;
+        color: white;
+    }
+
+    .product-title {
+        font-family: 'Glacial Indifference', sans-serif;
+    }
+
+    .product-price {
+        font-family: 'Glacial Indifference', sans-serif;
+        color: black;
+    }
+
+    .swiper-container {
+        width: 100%;
+        /* Adjust the width as needed */
+        margin: auto;
+        /* Center the swiper container */
+        overflow: scroll;
+        /* Hide overflow */
+    }
+
+    .swiper-pagination-bullet {
+        background: white !important;
+    }
+
+    .swiper-wrapper {
+        height: 70% !important;
+    }
+
+    .centered-section {
+        text-align: center;
+        background-color: #fff;
+        padding: 50px 0;
+    }
+
+    .side-by-side {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    .side-section {
+        width: 48%;
+    }
+
+    .side-section img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    a {
+        color: white;
+    }
+
+    .card-img-top {
+        height: 300px !important;
+    }
+    </style>
+</head>
+
+<body>
+    <center>
+        <div class="header">
+            <div class="nav">
+                <img src="https://i.imgur.com/A0YrFcq.png" width="100px" height="100px" class="logo">
+                <a href="./index.html" class="pill">Home</a>
+                <a href="./shop.html" class="pill">Shop</a>
+                <a href="./moto-x.html" class="pill active">Moto X</a>
+                <a href="./about.html" class="pill">About</a>
+                <i href="./cart.html" class="fas fa-shopping-cart" style="position:absolute;top:30px;right:45px;color:white;font-size:25px"></i>
+            </div>
+        </div>
+    </center>
+    <br><br>
+    <center>
+        <div class="container-fluid" style="width:90%; background-color:white;padding:20px">
+            <div class="row">
+                <div class=" card col-lg-4" style="margin-left:10%;margin-right:190px;background-color:black;padding:20px">
+                    <div class="card-title">
+                        <h1>Introducing Moto-X</h1>
+                    </div>
+                    <div class="card-body">
+                        <h1>Redefining Your Ride, Where Innovation Meets Adventure</h1>
+                        <p>MOTO-X isn't just an app – it's your ultimate riding partner, designed by riders, for riders. Get ready to dive into a world where your every ride becomes an adventure, and where cutting-edge technology takes your safety and exhilaration to new heights.</p>
+                    </div>
+                    <center>
+                        <a class="btn btn-primary" href="https://discord.gg/47industries">Join Discord</a>
+                    </center>
+                </div>
+                <div class="col-lg-4" style="border-radius:10px">
+                    <img src="https://static.wixstatic.com/media/27127f_e58bf6d6f58949b7beacd4b07188b1db~mv2.png/v1/fill/w_882,h_882,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/OnYourPhone.png" height="400px" style="height:400px" class="img-fluid" alt="Your Image">
+                    <br>
+                    <br>
+                    <br>
+                    <center>
+                        <div style="background: black;border-radius:50px">
+                            <img src="https://i.imgur.com/A0YrFcq.png" width="100px" height="100px">
+                    </center>
+                </div>
+            </div>
+        </div>
+    </center>
+    <br><br>
+    <center>
+        <div class="container-fluid" style="width:90%; background-color:white;padding:20px">
+            <div class="row">
+                <div class="col-lg-5" style="border-radius:10px">
+                    <img src="https://static.wixstatic.com/media/27127f_bccc9f0205b34d23829e3742f1efe5c3~mv2.png/v1/fill/w_1434,h_2176,al_c,q_95,enc_auto/27127f_bccc9f0205b34d23829e3742f1efe5c3~mv2.png" width="350px" height="550px">
+                    <br>
+                    <br>
+                    <br>
+                    <center>
+                        <div style="background: black;border-radius:50%;width: 110px; height:110px">
+                            <img src="https://i.imgur.com/A0YrFcq.png" width="100px" height="100px">
+                    </center>
+                </div>
+                <div class=" card col-lg-4" style="margin-left:10%;margin-right:190px;background-color:black;padding:20px">
+                    <div class="card-title">
+                        <h1>
+Are You In? 🚀<br>
+Secure Your Spot Today!</h1>
+                    </div>
+                    <div class="card-body">
+                        <p>The ride of your life is just around the corner. Join us in revolutionizing the way you ride, connect, and experience the road. Sign up now to be among the first to embark on this journey that's all about adrenaline, safety, and unity.
+                            <br><br>
+
+Enroll today and enjoy a complimentary month of MOTO-X's premium all-access subscription upon launch – a $9.99 value!</p>
+                    </div>
+                    <center>
+                        <a class="btn btn-primary" href="https://discord.gg/47industries">Join Discord</a>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </center>
+    <div class="footer">
+        <center>
+            <img src="https://i.imgur.com/A0YrFcq.png" width="100px" height="100px">
+            <br>
+            <a href="mailto:info@47industries.org">info@47industries.org</a>
+            <br>
+            <a style="color:white;">Seminole, Florida</a>
+            <br><br>
+            <a style="color:white;">©2023 by 47 Industries</a>
+        </center>
+        <br><br><br>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    loop: true,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+});
+</script>
