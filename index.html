@@ -271,11 +271,14 @@
     #drawer{
         display:none;
     }
+    .hamburger-btn{
+        display: none;
+    }
 
     /* Add media queries for specific screen sizes if needed */
     @media screen and (max-width: 768px) {
         .row {
-            width: 150%;
+            width: 100%;
         }
 
         .swiper-container {
@@ -289,9 +292,34 @@
     }
     /* Add these media queries to the existing styles */
 @media screen and (max-width: 768px) {
-    .hamburger-btn {
-        display: block;
+    body{
+        width:100% !important;
     }
+    /* Add these styles for the hamburger button */
+.hamburger-btn {
+    display: block;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+    margin-top:10px;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: white; /* Set the color to white */
+    margin: 6px 0;
+}
+
+/* Add these styles for better visibility on dark background */
+.header {
+        display: flex;
+    flex-wrap: nowrap;
+    justify-content: right;
+    width: 100%;
+    background-color: transparent;
+
+}
 
     .nav {
         display: none;
@@ -329,18 +357,19 @@
     </div>
     <center>
         <div class="header">
-            <img src="https://i.imgur.com/A0YrFcq.png" width="100px" height="100px" class="logo">
+            <img src="https://i.imgur.com/A0YrFcq.png" width="100px" height="100px" class="logo"> 
+                <div class="hamburger-btn" onclick="toggleDrawer()">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
             <div class="nav">
                 <a href="./index.html" class="pill active">Home</a>
                 <a href="./shop.html" class="pill">Shop</a>
                 <a href="./heather.html" class="pill">HEATHER</a>
                 <a href="./about.html" class="pill">About</a>
                 <i href="./cart.html" class="fas fa-shopping-cart" style="position:absolute;top:30px;right:45px;color:white;font-size:25px"></i>
-                <div class="hamburger-btn" onclick="toggleDrawer()">
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                </div>
+
             </div>
             <!-- Add this div after the existing content -->
 <div id="drawer">
@@ -553,19 +582,16 @@ function toggleDrawer() {
     var drawer = document.getElementById("drawer");
     var overlay = document.getElementById("overlay");
 
-    if (drawer.style.right === "0px") {
-        closeDrawer();
-    } else {
-        drawer.style.right = "0";
-        overlay.style.display = "block";
-    }
+   drawer.style.display = "block"
+   overlay.style.display = "block"
+
 }
 
 function closeDrawer() {
     var drawer = document.getElementById("drawer");
     var overlay = document.getElementById("overlay");
 
-    drawer.style.right = "-250px";
+    drawer.style.display = "none";
     overlay.style.display = "none";
 }
 
