@@ -4,9 +4,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link href="https://fonts.cdnfonts.com/css/glacial-indifference" rel="stylesheet">
-     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
-
-
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <style>
     body {
         background-color: black;
@@ -16,7 +14,7 @@
         background-color: white;
         border-radius: 50px;
         width: 30%;
-        cursor:pointer;
+        cursor: pointer;
 
     }
 
@@ -160,9 +158,129 @@
         max-width: 100%;
         height: auto;
     }
-    a{
-    	color:white;
+
+    a {
+        color: white;
     }
+
+    .row {
+        justify-content: center;
+        background-color:rgba(0, 0, 0, 0.5);
+        padding: 30px;
+        overflow-x:scroll;
+        width:100%;
+    }
+    .flex{
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x:scroll;
+        overflow-y:hidden;
+    }
+
+    .card-container {
+        height: 580px;
+        min-width: 40%;
+        max-width:430px;
+        margin:20px;
+
+    }
+
+    .rearCard {
+        background-color: gray;
+        border-radius: 20px;
+        height: 100%;
+        width: 100%
+    }
+
+    .card-top {
+        border-radius: 20px;
+        height: 60%;
+        width: 100%;
+        background-color: #18326e;
+        overflow: hidden;
+    }
+
+.card-bottom {
+    border-radius: 20px;
+    height: 49%;
+    width: 100%;
+    background-color: black;
+    position: relative;
+    top: -25px; /* Move card-bottom up by 15px */
+    z-index: 1; /* Ensure card-bottom is positioned above card-top */
+}
+
+    .product-title {
+        font-family: 'Arial';
+        text-align: left;
+        padding-left: 20px;
+        color: #e3e3e3;
+        padding-top:35px;
+    }
+
+    .product-text {
+        font-family: 'Arial';
+        text-align: left;
+        padding: 20px;
+        padding-top: 0px;
+        width: 100%;
+        font-size: 19px;
+        color: #cfcfcf;
+        line-height: 20px;
+    }
+
+    .addBtn {
+        position: absolute;
+        bottom: 10px;
+        right: 30px;
+        background-color: white;
+        color: black;
+        border: none;
+        padding: 15px;
+        border-radius: 15px;
+        font-size: 15px;
+        width: 120px;
+    }
+
+    .priceText {
+        position: absolute;
+        bottom: 10px;
+        left: 30px;
+
+        font-family: 'Arial'
+    }
+
+    .priceHeader {
+        margin: 0px;
+        padding-bottom: 0px;
+        color: #e3e3e3;
+        text-align: left;
+
+    }
+
+    .priceTag {
+        margin: 0px;
+        margin-top: 5px;
+        margin-left: -5px;
+        font-size: 30px;
+        color: #cfcfcf;
+    }
+
+/* Add media queries for specific screen sizes if needed */
+@media screen and (max-width: 768px) {
+    .row{
+        width:150%;
+    }
+    .swiper-container {
+        width: 70%;
+    }
+
+    .card-container {
+        min-width: 400px;
+        margin: 20px;
+    }
+}
+
     </style>
 </head>
 
@@ -177,172 +295,14 @@
                 <img src="https://i.imgur.com/A0YrFcq.png" width="100px" height="100px" class="logo">
                 <a href="./index.html" class="pill active">Home</a>
                 <a href="./shop.html" class="pill">Shop</a>
-                <a href="./moto-x.html" class="pill">Moto X</a>
+                <a href="./heather.html" class="pill">HEATHER</a>
                 <a href="./about.html" class="pill">About</a>
                 <i href="./cart.html" class="fas fa-shopping-cart" style="position:absolute;top:30px;right:45px;color:white;font-size:25px"></i>
             </div>
         </div>
     </center>
-    <br><br>
-    <center>
-        <div class="container-fluid">
-            <div class="row">
-                <div class=" card col-lg-4" style="margin-left:10%;margin-right:190px;background-color:black;padding:20px">
-                    <div class="card-title">
-                        <h1>Revolutionize Tomorrow: Igniting Innovation across 47 industries – Where Ideas Soar and Boundaries Fade!</h1>
-                    </div>
-                    <div class="card-body">
-                        <p>Embark on a journey of limitless possibilities with 47 Industries, your gateway to cutting-edge solutions. From groundbreaking software to transformative products, we redefine innovation. Join us in shaping the future – where brilliance meets function, and every idea has the power to change the game.</p>
-                    </div>
-                    <center>
-                        <a class="btn btn-primary" href="https://discord.gg/47industries">Join Discord</a>
-                    </center>
-                </div>
-                <div class="col-lg-4" style="background-color: #3eb5a1;border-radius:10px">
-                    <img src="https://i.imgur.com/JEPZByp.png" height="400px" style="height:400px" class="img-fluid" alt="Your Image">
-                    <br>
-                    <center>
-                        <img src="https://i.imgur.com/A0YrFcq.png" width="100px" height="100px">
-                    </center>
-                </div>
-            </div>
-        </div>
-    </center>
-    <br>
-    <hr style="background-color:white;width:80%">
-    <br>
-    <!-- Swiper JS Section for Featured Products -->
-    <div class="container mt-5" style="background-color:black; padding:20px">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2 style="color:white">Featured Products</h2>
-                <br>
-                <br>
-            </div>
-        </div>
-        <div class="swiper-container" style="background-color:black">
-            <div class="swiper-wrapper">
-                <!-- Bootstrap Cards as Swiper Slides -->
-                <div class="swiper-slide">
-                    <div class="card" style="width: 18rem;">
-                        <img src="https://static.wixstatic.com/media/27127f_e2b99ad42bbf4b0188a21aa26edca9ca~mv2.jpg/v1/fill/w_440,h_440,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/27127f_e2b99ad42bbf4b0188a21aa26edca9ca~mv2.jpg" class="card-img-top" alt="Product 1 Image">
-                        <div class="card-body">
-                            <center>
-                                <h5 class="product-title">47 | "Clear" Case For iPhone</h5>
-                            </center>
-                            <center>
-                                <h5 class="product-price">$20.00</h5>
-                            </center>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="card" style="width: 18rem;">
-                        <img src="https://static.wixstatic.com/media/27127f_b05b3303a4c4446aa72e4ed5187e5fd1~mv2.jpg/v1/fill/w_440,h_440,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/27127f_b05b3303a4c4446aa72e4ed5187e5fd1~mv2.jpg">
-                        <div class="card-body">
-                            <center>
-                                <h5 class="product-title">47 | Classic Tee</h5>
-                            </center>
-                            <center>
-                                <h5 class="product-price">$23.00</h5>
-                            </center>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="card" style="width: 18rem;">
-                        <img src="https://static.wixstatic.com/media/27127f_111294aed8ca4fec8173fe8cae28b71e~mv2.jpg/v1/fill/w_440,h_440,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/27127f_111294aed8ca4fec8173fe8cae28b71e~mv2.jpg">
-                        <div class="card-body">
-                            <center>
-                                <h5 class="product-title">47 | Classic Long Sleeve Tee</h5>
-                            </center>
-                            <center>
-                                <h5 class="product-price">$30.00</h5>
-                            </center>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="card" style="width: 18rem;">
-                        <img src="https://static.wixstatic.com/media/27127f_0c1c6993c64c42fabfe495fd7f6987bc~mv2.jpg/v1/fill/w_440,h_440,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/27127f_0c1c6993c64c42fabfe495fd7f6987bc~mv2.jpg">
-                        <div class="card-body">
-                            <center>
-                                <h5 class="product-title">47 | Bikini Set</h5>
-                            </center>
-                            <center>
-                                <h5 class="product-price">$33.00</h5>
-                            </center>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="card" style="width: 18rem;">
-                        <img src="https://static.wixstatic.com/media/27127f_63a5757f59ae4d60a659485ed79dea15~mv2.jpg/v1/fill/w_440,h_440,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/27127f_63a5757f59ae4d60a659485ed79dea15~mv2.jpg">
-                        <div class="card-body">
-                            <center>
-                                <h5 class="product-title">47 | Embroidered Beanie</h5>
-                            </center>
-                            <center>
-                                <h5 class="product-price">$25.00</h5>
-                            </center>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="card" style="width: 18rem;">
-                        <img src="https://static.wixstatic.com/media/27127f_f199165d345d4dcdb2574bcba72febd2~mv2.jpg/v1/fill/w_440,h_440,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/27127f_f199165d345d4dcdb2574bcba72febd2~mv2.jpg">
-                        <div class="card-body">
-                            <center>
-                                <h5 class="product-title">47 | Athletic Shorts</h5>
-                            </center>
-                            <center>
-                                <h5 class="product-price">$33.00</h5>
-                            </center>
-                        </div>
-                    </div>
-                </div>
-                <!-- Add more cards as needed -->
-            </div>
-            <div style="position:relative;width:100%">
-                <!-- Add Pagination -->
-                <div class="swiper-pagination"></div>
-            </div>
-        </div>
+    <div id="sections">
     </div>
-    <br><br>
-    <div class="container-fluid centered-section" style="width:80%">
-        <div class="row">
-            <div class="col-lg-12">
-                <h2>OUR FIELDS</h2>
-                <center><h2 style="color:black">OF EXPERTISE</h2><center>
-            </div>
-        </div>
-        <div class="row side-by-side">
-            <!-- First Side Section -->
-            <div class="col-lg-6 side-section">
-                <img src="https://static.wixstatic.com/media/27127f_3c1f5dee8db54d2593285af781ecdbd4~mv2.png/v1/fill/w_354,h_354,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/3dp.png" alt="Image 1">
-                <h2>3D PRINTING</h2>
-                <center><h2 style="width:50%">OUR FLEET OF 3D PRINTED PRODUCTS WILL REVOLUTIONIZE YOUR DAY-TO-DAY OPERATIONS </h2></center>
-            </div>
-            <!-- Second Side Section -->
-            <div class="col-lg-6 side-section">
-                <img src="https://static.wixstatic.com/media/27127f_2c383afe80e4424b9228b167ce9e7254~mv2.png/v1/fill/w_354,h_354,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/bike.png" alt="Image 2">
-                <h2>MOTO-X</h2>
-                <center><h2 style="width:50%">OUR MOBILE APPLICATION WILL PROTECT YOU ON THE ROAD WHILE OFFERING FEATURES FOR YOUR RIDE THAT YOU WON'T BE ABLE TO RESIST</h2></center>
-            </div>
-        </div>
-    </div>
-    <div class="footer">
-    	<center>
-    		<img src="https://i.imgur.com/A0YrFcq.png" width="100px" height="100px">
-    		<br>
-    		<a href="mailto:info@47industries.org">info@47industries.org</a>
-    		<br>
-    		<a style="color:white;">Seminole, Florida</a>
-    		<br><br>
-    		<a style="color:white;">©2023 by 47 Industries</a>
-    	</center>
-<br><br><br>
 </body>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
@@ -454,4 +414,84 @@ document.getElementById('warp').addEventListener("click", function(e) {
 });
 
 executeFrame();
+
+
+
+
+
+
+var myHeaders = new Headers();
+myHeaders.append("Cookie", "NID=511=AvwSL4BnAs5X4QGxcpI5w8T-H8cF_oX-sHRmffaP9sMvOo417L7k-JHqQjxiJcvILU4C0Sm65iCHJFMtRwD605lQp7Pg2oPEC3aImG62Qx794ihHcKvmF5NaXOf5hTgGTSNfl2J_5hIccM_mR4HkJ31dCQgxeqL7r4GKFoU450c");
+
+var requestOptions = {
+    method: 'GET',
+    headers: myHeaders,
+    redirect: 'follow'
+};
+
+fetch("https://script.google.com/macros/s/AKfycbxtTUIWEB-MLv-HJB3Zy37aS3cxD3nHOHqxXfFBYUfzYby-OFOBTIc03cuSm_Iro-Z41Q/exec", requestOptions)
+    .then(response => response.text())
+    .then(result => handleData(result))
+    .catch(error => console.log('error', error));
+
+
+var categories = [];
+var sectionsHTML = "";
+var productsHTML = "";
+
+function handleData(data) {
+    var data = JSON.parse(data);
+
+    for (var i in data) {
+        categories.push(data[i].Category);
+    }
+
+    for (var i in categories) {
+        sectionsHTML += `
+            <div class="container mt-4">
+                <div class="row">
+                <center><h2 style="color:white">${categories[i]}</h2></center><br>
+                <div class="flex">
+                    ${getProductsHTML(categories[i], data)}
+                    </div>
+                </div>
+            </div>`;
+    }
+
+    document.getElementById("sections").innerHTML = sectionsHTML;
+}
+
+function getProductsHTML(category, data) {
+    var productsHTML = "";
+
+    for (var i in data) {
+        if (data[i].Category === category) {
+            productsHTML += `
+<div class="card-container">
+    <div class="rearCard">
+        <div class="card-top">
+            <img src="${data[i].Picture}" class="card-img-top" alt="${data[i].Name}" width="100%">
+        </div>
+        <div class="card-bottom">
+            <h4 class="product-title">${data[i].Name}</h4>
+            <p class="product-text">${data[i].ShortDescription}</p>
+            <div class="priceText">
+                <strong>
+                    <p class="priceHeader">PRICE:</p>
+                </strong>
+                <h4 class="priceTag">$${data[i].Price}</h4>
+            </div>
+            <strong><button class="addBtn">Add to cart</button></strong>
+        </div>
+    </div>
+</div>`;
+
+
+
+
+        }
+    }
+
+    return productsHTML;
+}
 </script>
