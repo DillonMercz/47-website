@@ -165,23 +165,24 @@
 
     .row {
         justify-content: center;
-        background-color:rgba(0, 0, 0, 0.5);
+        background-color: rgba(0, 0, 0, 0.5);
         padding: 30px;
-        overflow-x:scroll;
-        width:100%;
+        overflow-x: scroll;
+        width: 100%;
     }
-    .flex{
+
+    .flex {
         display: flex;
         flex-wrap: nowrap;
-        overflow-x:scroll;
-        overflow-y:hidden;
+        overflow-x: scroll;
+        overflow-y: hidden;
     }
 
     .card-container {
         height: 580px;
         min-width: 40%;
-        max-width:430px;
-        margin:20px;
+        max-width: 430px;
+        margin: 20px;
 
     }
 
@@ -200,22 +201,24 @@
         overflow: hidden;
     }
 
-.card-bottom {
-    border-radius: 20px;
-    height: 49%;
-    width: 100%;
-    background-color: black;
-    position: relative;
-    top: -25px; /* Move card-bottom up by 15px */
-    z-index: 1; /* Ensure card-bottom is positioned above card-top */
-}
+    .card-bottom {
+        border-radius: 20px;
+        height: 49%;
+        width: 100%;
+        background-color: black;
+        position: relative;
+        top: -25px;
+        /* Move card-bottom up by 15px */
+        z-index: 1;
+        /* Ensure card-bottom is positioned above card-top */
+    }
 
     .product-title {
         font-family: 'Arial';
         text-align: left;
         padding-left: 20px;
         color: #e3e3e3;
-        padding-top:35px;
+        padding-top: 35px;
     }
 
     .product-text {
@@ -265,19 +268,54 @@
         font-size: 30px;
         color: #cfcfcf;
     }
+    #drawer{
+        display:none;
+    }
 
-/* Add media queries for specific screen sizes if needed */
+    /* Add media queries for specific screen sizes if needed */
+    @media screen and (max-width: 768px) {
+        .row {
+            width: 150%;
+        }
+
+        .swiper-container {
+            width: 70%;
+        }
+
+        .card-container {
+            min-width: 400px;
+            margin: 20px;
+        }
+    }
+    /* Add these media queries to the existing styles */
 @media screen and (max-width: 768px) {
-    .row{
-        width:150%;
-    }
-    .swiper-container {
-        width: 70%;
+    .hamburger-btn {
+        display: flex;
     }
 
-    .card-container {
-        min-width: 400px;
-        margin: 20px;
+    .nav {
+        display: none;
+    }
+
+    #drawer {
+    display: block;
+    width: 100%;
+    right: -100%;
+    height: 100% !important;
+    position: absolute;
+    left: 50%;
+    background: white;
+    border-radius: 20px;
+    z-index: 9999;
+    }
+
+    #overlay {
+        display: block;
+    }
+
+    .header .pill {
+        display: block;
+        text-align: center;
     }
 }
 
@@ -298,7 +336,22 @@
                 <a href="./heather.html" class="pill">HEATHER</a>
                 <a href="./about.html" class="pill">About</a>
                 <i href="./cart.html" class="fas fa-shopping-cart" style="position:absolute;top:30px;right:45px;color:white;font-size:25px"></i>
+                <div class="hamburger-btn" onclick="toggleDrawer()">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
             </div>
+            <!-- Add this div after the existing content -->
+<div id="drawer">
+    <!-- Drawer content goes here -->
+    <img src="https://i.imgur.com/A0YrFcq.png" width="100px" height="100px" class="logo">
+                <a href="./index.html" class="pill active">Home</a>
+                <a href="./shop.html" class="pill">Shop</a>
+                <a href="./heather.html" class="pill">HEATHER</a>
+                <a href="./about.html" class="pill">About</a>
+</div>
+<div id="overlay" onclick="closeDrawer()"></div>
         </div>
     </center>
     <div id="sections">
@@ -494,4 +547,27 @@ function getProductsHTML(category, data) {
 
     return productsHTML;
 }
+
+
+// Add these functions to the existing script tag
+function toggleDrawer() {
+    var drawer = document.getElementById("drawer");
+    var overlay = document.getElementById("overlay");
+
+    if (drawer.style.right === "0px") {
+        closeDrawer();
+    } else {
+        drawer.style.right = "0";
+        overlay.style.display = "block";
+    }
+}
+
+function closeDrawer() {
+    var drawer = document.getElementById("drawer");
+    var overlay = document.getElementById("overlay");
+
+    drawer.style.right = "-250px";
+    overlay.style.display = "none";
+}
+
 </script>
