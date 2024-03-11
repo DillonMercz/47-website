@@ -268,10 +268,12 @@
         font-size: 30px;
         color: #cfcfcf;
     }
-    #drawer{
-        display:none;
+
+    #drawer {
+        display: none;
     }
-    .hamburger-btn{
+
+    .hamburger-btn {
         display: none;
     }
 
@@ -279,8 +281,8 @@
     @media screen and (max-width: 768px) {
         .row {
             width: 109%;
-            padding-left:0px;
-            padding-right:0px;
+            padding-left: 0px;
+            padding-right: 0px;
         }
 
         .swiper-container {
@@ -292,71 +294,73 @@
             margin: 20px;
         }
     }
+
     /* Add these media queries to the existing styles */
-@media screen and (max-width: 768px) {
-    body{
-        width:100% !important;
-    }
-    /* Add these styles for the hamburger button */
-.hamburger-btn {
-    display: block;
-    flex-direction: column;
-    cursor: pointer;
-    padding: 10px;
-    margin-top:10px;
-    margin-right:15px;
-}
+    @media screen and (max-width: 768px) {
+        body {
+            width: 100% !important;
+        }
 
-.bar {
-    width: 30px;
-    height: 3px;
-    background-color: white; /* Set the color to white */
-    margin: 6px 0;
-}
+        /* Add these styles for the hamburger button */
+        .hamburger-btn {
+            display: block;
+            flex-direction: column;
+            cursor: pointer;
+            padding: 10px;
+            margin-top: 10px;
+            margin-right: 15px;
+        }
 
-/* Add these styles for better visibility on dark background */
-.header {
-        display: flex;
-    flex-wrap: nowrap;
-    justify-content: right;
-    width: 100%;
-    background-color: transparent;
+        .bar {
+            width: 30px;
+            height: 3px;
+            background-color: white;
+            /* Set the color to white */
+            margin: 6px 0;
+        }
 
-}
+        /* Add these styles for better visibility on dark background */
+        .header {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: right;
+            width: 100%;
+            background-color: transparent;
 
-    .nav {
-        display: none;
-    }
+        }
 
-    #drawer {
-    display: none;
-    width: 50%;
-    right: 0%;
-    height: 100% !important;
-    position: absolute;
-    left: 50%;
-    background: white;
-    border-radius: 20px;
-    z-index: 9999;
-    }
-
-    #overlay {
+        .nav {
             display: none;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: 999;
-    background-color: black;
-    opacity: 0.7;
+        }
+
+        #drawer {
+            display: none;
+            width: 50%;
+            right: 0%;
+            height: 100% !important;
+            position: absolute;
+            left: 50%;
+            background: white;
+            border-radius: 20px;
+            z-index: 9999;
+        }
+
+        #overlay {
+            display: none;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index: 999;
+            background-color: black;
+            opacity: 0.7;
+        }
+
+        .header .pill {
+            display: block;
+            text-align: center;
+        }
+
     }
-
-    .header .pill {
-        display: block;
-        text-align: center;
-    }
-
-}
-
     </style>
 </head>
 
@@ -367,29 +371,28 @@
     </div>
     <center>
         <div class="header">
-            <img src="https://i.imgur.com/A0YrFcq.png" width="100px" height="100px" class="logo"> 
-                <div class="hamburger-btn" onclick="toggleDrawer()">
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                </div>
+            <img src="https://i.imgur.com/A0YrFcq.png" width="100px" height="100px" class="logo">
+            <div class="hamburger-btn" onclick="toggleDrawer()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
             <div class="nav">
                 <a href="./index.html" class="pill active">Home</a>
-                <a href="./shop.html" class="pill">Shop</a>
-                <a href="./heather.html" class="pill">HEATHER</a>
+                <!--<a href="./shop.html" class="pill">Shop</a>-->
+                <!--<a href="./heather.html" class="pill">HEATHER</a>-->
                 <a href="./about.html" class="pill">About</a>
-                <i href="./cart.html" class="fas fa-shopping-cart" style="position:absolute;top:30px;right:45px;color:white;font-size:25px"></i>
-
+                <!--<i href="./cart.html" class="fas fa-shopping-cart" style="position:absolute;top:30px;right:45px;color:white;font-size:25px"></i>-->
             </div>
             <!-- Add this div after the existing content -->
-<div id="drawer">
-    <!-- Drawer content goes here -->
+            <div id="drawer">
+                <!-- Drawer content goes here -->
                 <a href="./index.html" class="pill active">Home</a>
-                <a href="./shop.html" class="pill">Shop</a>
-                <a href="./heather.html" class="pill">HEATHER</a>
+                <!--<a href="./shop.html" class="pill">Shop</a>
+                <a href="./heather.html" class="pill">HEATHER</a>-->
                 <a href="./about.html" class="pill">About</a>
-</div>
-<div id="overlay" onclick="closeDrawer()"></div>
+            </div>
+            <div id="overlay" onclick="closeDrawer()"></div>
         </div>
     </center>
     <div id="sections">
@@ -593,8 +596,8 @@ function toggleDrawer() {
     var drawer = document.getElementById("drawer");
     var overlay = document.getElementById("overlay");
 
-   drawer.style.display = "block"
-   overlay.style.display = "block"
+    drawer.style.display = "block"
+    overlay.style.display = "block"
 
 }
 
@@ -605,5 +608,4 @@ function closeDrawer() {
     drawer.style.display = "none";
     overlay.style.display = "none";
 }
-
 </script>
