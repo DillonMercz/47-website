@@ -577,7 +577,7 @@ function getProductsHTML(category, data) {
                 </strong>
                 <h4 class="priceTag">$${data[i].Price}</h4>
             </div>
-            <strong><button class="addBtn">Buy Now</button></strong>
+            <strong><button onclick="location.href='${data[i].Link}'" class="addBtn">Buy Now</button></strong>
         </div>
     </div>
 </div>`;
